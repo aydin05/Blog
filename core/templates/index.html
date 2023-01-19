@@ -1,0 +1,442 @@
+{% extends 'base.html'%}
+{% load static %}
+{% load i18n %}
+
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+{% block body%}
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="tags for website">
+  <meta name="description" content="front-end starter">
+  <meta name="author" content="Labrin.net">
+
+    <title> Home - Project Title </title>
+<body>
+  <section id="wallpaper-section" style="background: url({% static '/assets/Rectangle1.png'%});">
+    <div class="overlay" style="background: url({% static '/assets/Rectangle2.png'%});"></div>
+      <div class="mobile-menu">
+        <div class="container d-flex flex-column h-100">
+          <ul>
+            <li>
+              <a class="active" href="/">Home</a>
+            </li>
+            <li>
+              <a href="/services">Services</a>
+            </li>
+            <li>
+              <a href="/projects">Projects</a>
+            </li>
+            <li>
+              <a href="/team">Team</a>
+            </li>
+            <li>
+              <a href="/">Pricing</a>
+            </li>
+          </ul>
+          <div class="langSelectContainer">
+            <span>LANGUAGE:</span>
+            <div class="language">
+              <p>EN</p>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" width="255px" height="255px" viewBox="0 0 255 255"
+                style="enable-background:new 0 0 255 255;" xml:space="preserve">
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75"></polygon>
+                  </g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    <header>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-5">
+                        <a href="index.html" class="logo">
+                            <img src="{% static '/assets/logo.svg'%}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-6 d-lg-flex d-none align-items-center justify-content-center">
+                        <ul class="menu">
+                            <li>
+                                <a class="active" href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/services">Services</a>
+                            </li>
+                            <li>
+                                <a href="/projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="/team">Team</a>
+                            </li>
+                            <li>
+                                <a href="/">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-7 d-flex align-items-center justify-content-end">
+                        <button class="btn_outline">
+                            Contact us
+                        </button>
+                        <button id="toggleMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Button up -->
+    <button class="buttonUp">
+        <img src="{% static '/assets/ArrowDownShort.svg'%}" alt="">
+    </button>
+    <!-- Button up -->    <div class="wallp-content">
+      <h1>
+        <span>We Are</span>
+        <span>Digital</span>
+        <span>Growth</span>
+        <span>Experts</span>
+      </h1>
+      <div class="dark-line">
+        <h2>Your Idea.</h2>
+        <h2> Our Solution.</h2>
+      </div>
+      <button class="btn_normal">
+        How we can help
+      </button>
+    </div>
+  </section>
+
+  <section class="tb_first_section">
+    <div class="mini-title justify-content-end">
+      <h5>About Turingsoft</h5>
+    </div>
+    <div class="container tb_inner">
+      <div class="row m-0">
+        <div class="col-lg-7 col-6">
+          <div class="images-lyr">
+            <div class="first-img img-lyr">
+              <img src="{% static '/assets/Rectangle13.png'%}" alt="">
+            </div>
+            <div class="second-img img-lyr">
+              <img src="{% static '/assets/Rectangle14.png'%}" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-6">
+          <div class="content">
+            <h4>
+                {{ post.title2 }}
+            </h4>
+            <p>
+              {{ post.content }}
+            </p>
+          </div>
+          <button class="btn_normal float-right">
+            <p>About us</p>
+            <img src="{% static '/assets/ArrowRightShort.svg'%}" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tb_second_section">
+    <div class="mini-title">
+      <h5 class="text-right">What we do</h5>
+    </div>
+    <div class="container">
+      <div class="content">
+        <h4>Always strive for better work</h4>
+        <p>Our excellent services give you the best
+          output in your business</p>
+      </div>
+      <div class="desktop-version">
+        <div class="row">
+          {% for service in services %}
+          <div class="col-lg-3 col-6">
+            <div class="card_tb_second">
+              <div class="image">
+                <img src="{{ service.image.url }}" alt="">
+              </div>
+              <div class="content-div">
+                <p class="normal-txt">{{ service.title }}</p>
+                <p class="hover-txt">{{ service.content }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="mobile-version">
+        <div class="owl-carousel">
+          {% for service in services %}
+          <div class="card_tb_second">
+            <div class="image">
+              <img src="{{ service.image.url }}" alt="">
+            </div>
+            <div class="content-div">
+              <p class="normal-txt">{{ service.title }}</p>
+              <p class="hover-txt">{{ service.content }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+        <a href="/services">
+          <button class="btn_normal">
+            <p>View all services</p>
+            <img src="{% static '/assets/ArrowRightShort.svg'%}" alt="">
+          </button>
+        </a>
+    </div>
+  </section>
+
+  <section class="tb_third_section">
+    <div class="mini-title justify-content-end">
+      <h5>Our portfolio</h5>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 d-lg-block d-none"></div>
+        <div class="col-lg-5 col-12">
+          <div class="content">
+            <h4>Case Studies</h4>
+            <p>Our development company works with you to dig into
+              the details of your idea for creating a comprehensive strategy
+              for your startup business.</p>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-version">
+        <div class="row">
+          {% for project in projects %}
+          <div class="col-lg-3 col-6">
+            <div class="card_tb_third">
+              <img src="{{ project.image.url }}" alt="">
+              <div class="overlay">
+                <h6>{{ project.title }}</h6>
+                <span>{{ project.category }}</span>
+                <p>{{ project.content }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="mobile-version">
+        <div class="owl-carousel">
+          {% for project in projects %}
+          <div class="card_tb_third">
+            <img src="{{ project.image.url }}" alt="">
+            <div class="overlay">
+              <h6>{{ project.title }}</h6>
+              <span>{{ project.category }}</span>
+              <p>{{ project.content }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <button class="btn_normal float-right">
+        <p>View all projects</p>
+        <img src="{% static '/assets/ArrowRightShort.svg'%}" alt="">
+      </button>
+    </div>
+  </section>
+
+  <section class="tb_fourth_section">
+    <div class="mini-title">
+      <h5 class="text-right">Blog post</h5>
+    </div>
+    <div class="container">
+      <div class="content">
+        <h4>Our Latest News</h4>
+      </div>
+      <div class="desktop-version">
+        <div class="row">
+          {% for news in news %}
+          <div class="col-lg-3 col-md-6">
+            <div class="card_tb_fourth">
+              <div class="card-top">
+                <img src="{{ news.image.url }}" alt="">
+              </div>
+              <div class="card-bottom">
+                <h6>{{ news.title }}</h6>
+                <span>{{ news.category }}</span>
+                <p>{{ news.content }}</p>
+                <a href="">
+                  <p>Read more</p>
+                  <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+      <div class="mobile-version">
+        <div class="owl-carousel">
+          {% for news in news %}
+          <div class="card_tb_fourth">
+            <div class="card-top">
+              <img src="{{ news.image.url }}" alt="">
+            </div>
+            <div class="card-bottom">
+              <h6>{{ news.title }}</h6>
+              <span>{{ news.category }}</span>
+              <p>{{ news.content }}</p>
+              <a href="">
+                <p>Read more</p>
+                <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <button class="btn_normal">
+        <p>View all news</p>
+        <img src="{% static '/assets/ArrowRightShort.svg'%}" alt="">
+      </button>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <h3>We are Here to Help You</h3>
+        <p>Tell us about your request and we will give you solution</p>
+      </div>
+      <form action="">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="inputGroup">
+              <input type="text" placeholder="Full name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="inputGroup">
+              <input type="email" name="" id="" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="inputGroup">
+              <input type="text" placeholder="Phone number">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="inputGroup">
+              <div class="custom-select">
+                <select>
+                  <option value="0">Ölkə:</option>
+                  <option value="" class="heading">Seçin:</option>
+                  <option value="1">Azerbaijan</option>
+                  <option value="2">Turkish</option>
+                  <option value="3">Russia</option>
+                  <option value="1">Azerbaijan</option>
+                  <option value="2">Turkish</option>
+                  <option value="3">Russia</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <button class="btn_normal">
+              Request call back
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="logo-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <a href="" class="item">
+            <img src="{% static '/assets/Group18.svg'%}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <a href="" class="item">
+            <img src="{% static '/assets/Group18.svg'%}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <a href="" class="item">
+            <img src="{% static '/assets/Group18.svg'%}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <a href="" class="item">
+            <img src="{% static '/assets/Group18.svg'%}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <a href="" class="item">
+            <img src="{% static '/assets/Group18.svg'%}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <a href="" class="item">
+            <img src="{% static '/assets/Group18.svg'%}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+{% endblock body%}

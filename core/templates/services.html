@@ -1,0 +1,244 @@
+{% extends 'base.html'%}
+{% load static%}
+{% load i18n%}
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+{% block body%}
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="tags for website">
+    <meta name="description" content="front-end starter">
+    <meta name="author" content="Labrin.net">
+    
+      <title> Home - Project Title </title>
+
+<body>
+    <section id="wallpaper-section" class="wallp-second" style="background: url({% static '/assets/Rectangle1.png'%});">
+        <div class="overlay" style="background: url({% static '/assets/Rectangle2.png'%});"></div>
+          <div class="mobile-menu">
+            <div class="container d-flex flex-column h-100">
+              <ul class="menu">
+                                <li>
+                                    <a class="active" href="/">{% trans "Home"%}</a>
+                                </li>
+                                <li>
+                                    <a href="/services">{% trans "Services"%}</a>
+                                </li>
+                                <li>
+                                    <a href="/projects">{% trans "Projects"%}</a>
+                                </li>
+                                <li>
+                                    <a href="/team">{% trans "Team"%}</a>
+                                </li>
+                                <li>
+                                    <a href="/">{% trans "Pricing"%}</a></li>
+              </ul>
+              <div class="langSelectContainer">
+                <span>LANGUAGE:</span>
+                <div class="language">
+                  <p>EN</p>
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" width="255px" height="255px" viewBox="0 0 255 255"
+                    style="enable-background:new 0 0 255 255;" xml:space="preserve">
+                    <g>
+                      <g id="arrow-drop-down">
+                        <polygon points="0,63.75 127.5,191.25 255,63.75"></polygon>
+                      </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        <header>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-5">
+                            <a href="index.html" class="logo">
+                                <img src="{% static '/assets/logo.svg'%}" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-lg-flex d-none align-items-center justify-content-center">
+                            <ul class="menu">
+                                <li>
+                                    <a class="active" href="/">{% trans "Home"%}</a>
+                                </li>
+                                <li>
+                                    <a href="/services">{% trans "Services"%}</a>
+                                </li>
+                                <li>
+                                    <a href="/projects">{% trans "Projects"%}</a>
+                                </li>
+                                <li>
+                                    <a href="/team">{% trans "Team"%}</a>
+                                </li>
+                                <li>
+                                    <a href="/">{% trans "Pricing"%}</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-7 d-flex align-items-center justify-content-end">
+                            <button class="btn_outline">
+                                {% trans "Contact us"%}
+                            </button>
+                            <button id="toggleMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Button up -->
+        <button class="buttonUp">
+            <img src="{% static '/assets/ArrowDownShort.svg'%}" alt="">
+        </button>
+        <!-- Button up -->        <div class="wallp-content wallpaper-mg">
+            <div class="dark-line dark-line-height">
+                <p>We partner with customers to provide successful solutions <br>
+                    that deliver real results!</p>
+            </div>
+            <button class="btn_normal">
+                Contact us
+            </button>
+        </div>
+    </section>
+
+    <section class="logo-section logo-second">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="" class="item">
+                        <img src="{% static '/assets/Group18.svg'%}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="" class="item">
+                        <img src="{% static '/assets/Group18.svg'%}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="" class="item">
+                        <img src="{% static '/assets/Group18.svg'%}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="" class="item">
+                        <img src="{% static '/assets/Group18.svg'%}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="" class="item">
+                        <img src="{% static '/assets/Group18.svg'%}" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="" class="item">
+                        <img src="{% static '/assets/Group18.svg'%}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tb_fifth_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card_tb_fifth">
+                        <div class="tb_card_top_header">
+                            <img src="{% static '/assets/Rectangle42.png'%}" alt="">
+                        </div>
+                        <div class="tb_card_header">
+                            <h5>User Experience</h5>
+                            <p>
+                                We analyze every aspect of your industry and apply our digital expertise to provide a
+                                roadmap
+                                for success.
+                            </p>
+                        </div>
+                        <div class="tb_card_body">
+                            <ul>
+                                <li>
+                                    <img src="{% static '/assets/Check.svg'%}" alt="">
+                                    <p>Competitive & User Research</p>
+                                </li>
+                                <li>
+                                    <img src="{% static '/assets/Check.svg'%}" alt="">
+                                    <p>Digital Strategy & SEO Optimization</p>
+                                </li>
+                                <li>
+                                    <img src="{% static '/assets/Check.svg'%}" alt="">
+                                    <p>Information Architecture</p>
+                                </li>
+                                <li>
+                                    <img src="{% static '/assets/Check.svg'%}" alt="">
+                                    <p>Usability Testing</p>
+                                </li>
+                                <li>
+                                    <img src="{% static '/assets/Check.svg'%}" alt="">
+                                    <p>Content Planning</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner-sect">
+            <div class="container d-flex flex-column align-items-center">
+                <h4>We have experience in Digital Agency</h4>
+                <p>Always strive for better work</p>
+                <button class="btn_normal">Contact us</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+{% endblock body%}

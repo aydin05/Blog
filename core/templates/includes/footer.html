@@ -1,0 +1,122 @@
+{% load static %}
+<footer>
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-3 col-12 d-none d-md-block">
+                <a href="" class="footer-logo">
+                    <img src="{% static '/assets/Group1.svg'%}" alt="">
+                </a>
+                <p class="footer-content">Master Writers a trusted name for providing assistants. Who are loyal to their industry, experienced and professiona</p>
+                <div class="footer-items">
+                    <div class="">
+                        <img src="{% static '/assets/location1.png'%}" alt="">
+                        <p>{{ header.address }}</p>
+                    </div>
+                    <div class="">
+                        <img src="{% static '/assets/location1.png'%}" alt="">
+                        <p>{{ header.phone_number }}</p>
+                    </div>
+                    <div class="">
+                        <img src="{% static '/assets/location1.png'%}" alt="">
+                        <p>{{ header.email }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <div class="mini-title-footer">
+                    <h4>Useful links</h4>
+                </div>
+                <div class="footer-links">
+                    <a href="/">
+                        <p>Home</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                    <a href="/services">
+                        <p>Services</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                    <a href="/projects">
+                        <p>Projects</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                    <a href="/team">
+                        <p>Team</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                    <a href="/">
+                        <p>Pricing</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="mini-title-footer">
+                    <h4>What we do</h4>
+                </div>
+                <div class="footer-links">
+                    <a href="">
+                        <p>Web & Mobile development</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                    <a href="">
+                        <p>DevOps</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                    <a href="">
+                        <p>UI/UX design</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                    <a href="">
+                        <p>Digital brandings</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                    <a href="">
+                        <p>Manage investment</p>
+                        <img src="{% static '/assets/ArrowRightShortDark.svg'%}" alt="">
+                    </a>
+                </div>
+                <div class="mobile-version">
+                    <div class="footer-items">
+                        <div class="">
+                            <img src="{% static '/assets/location1.png'%}" alt="">
+                            <p>{{ header.address }}</p>
+                        </div>
+                        <div class="">
+                            <img src="{% static '/assets/location1.png'%}" alt="">
+                            <p>{{ header.phone_number }}</p>
+                        </div>
+                        <div class="">
+                            <img src="{% static '/assets/location1.png'%}" alt="">
+                            <p>{{ header.email }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 d-none d-md-block">
+                <div class="mini-title-footer">
+                    <h4>Newsletter</h4>
+                </div>
+                <form action="">
+                    <p>Get in your inbox the latest News</p>
+                    <div class="inputGroup">
+                        <label>
+                            <input type="text" placeholder="Your name">
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>
+                            <input type="text" placeholder="Email adress">
+                        </label>
+                    </div>
+                    <button class="btn_normal">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2020 Master Writers</p>
+            <a href="" class="footer-logo-second">
+                <img src="{% static '/assets/logo.svg'%}" alt="">
+            </a>
+        </div>
+    </div>
+</footer>

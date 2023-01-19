@@ -1,0 +1,99 @@
+{% load static %}
+{% load i18n %}
+      <div class="selectLanguage" style="z-index: 10">
+        <div class="miniHeader">
+          <div class="content">
+            <span>Language</span>
+          </div>
+          <div class="closeIconLang">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.22217" width="25.1415" height="3.14269" transform="rotate(45 2.22217 0)" fill="#566178"></rect>
+              <rect y="17.7772" width="25.1416" height="3.14269" transform="rotate(-45 0 17.7772)" fill="#566178"></rect>
+            </svg>
+          </div>
+        </div>
+        <div class="checkbox-wrapper">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="lang" id="az" value="az">
+            <label class="form-check-label" for="az">
+                <a href="/az" style="color: black">aze</a>
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="lang" id="en" value="en" checked>
+            <label class="form-check-label" for="en">
+                <a href="/en" style="color: black">eng</a>
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="lang" id="ru" value="ru" checked>
+            <label class="form-check-label" for="ru">
+                <a href="/ru" style="color: black">rus</a>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center h-100">
+                <div class="col-7 d-lg-flex d-none align-items-center">
+                    <div class="item">
+                        <img src="{% static '/assets/location1.png'%}" alt="">
+                        <span>{{ header.address }}</span>
+                    </div>
+                    <div class="item">
+                        <img src="{% static '/assets/Vector.png'%}" alt="">
+                        <span>{{ header.phone_number }}</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12 d-flex justify-content-end">
+                    <div class="social-icons">
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="container-select-language">
+                        <div class="items-top-footer drop-down-key">
+                            <p>aze</p>
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.52938 4.9625L0.531882 1.53625C0.178132 1.13312 0.465632 0.5 1.00251 0.5H6.99751C7.11766 0.499897 7.23529 0.53443 7.33633 0.599463C7.43736 0.664496 7.5175 0.757273 7.56716 0.866683C7.61682 0.976093 7.63389 1.0975 7.61633 1.21636C7.59876 1.33522 7.54731 1.4465 7.46813 1.53687L4.47063 4.96187C4.41197 5.029 4.33962 5.08281 4.25845 5.11967C4.17728 5.15654 4.08916 5.17561 4.00001 5.17561C3.91085 5.17561 3.82274 5.15654 3.74156 5.11967C3.66039 5.08281 3.58804 5.029 3.52938 4.96187V4.9625Z"
+                                      fill="white"></path>
+                            </svg>
+                        </div>
+                        <li class="drop-down-language">
+                            <form action="{% url 'selectlanguage'%}" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="next" value="{{ redirect_to }}">
+                                <label for="">
+                                    <select name="language" id="">
+                                    {% get_current_language as LANGUAGE_CODE %}
+                                    {% get_available_languages as LANGUAGES %}
+                                    {% get_language_info_list for LANGUAGES as languages%}
+                                    {% for language in languages %}
+                                        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                            {{ language.name_local }} ({{ language.code }})
+                                        </option>
+                                    {% endfor %}
+
+                                    </select>
+                                </label>
+                                <input type="submit" value="Go">
+                            </form>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
